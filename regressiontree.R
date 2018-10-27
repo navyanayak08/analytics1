@@ -13,7 +13,8 @@ library(rpart.plot)
 #Model
 tree1 = rpart(Sales ~ . , data=data, method='anova' )
 tree1
-rpart.plot(tree1, cex=.8, nn=T)
+rpart.plot(tree1, cex=.9, nn=T)
+
 
 #this is large tree, so prune it: check cp
 printcp(tree1)
